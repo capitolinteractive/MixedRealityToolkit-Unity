@@ -1,0 +1,19 @@
+# Create UPM packages for public OFFICIAL release
+
+variables:
+- template: config/settings.yml
+
+parameters:
+- name: PreviewNumber
+  type: string
+  default: ''
+
+jobs:
+- job: UPMPublicRelease
+  timeoutInMinutes: 30
+  pool:
+    vmImage: windows-2019
+  steps:
+  - template: templates/tasks/pack-upm.yml
+    parameters:
+      previewNumber: ${{ parameters.PreviewNumber }}
