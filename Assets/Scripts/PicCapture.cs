@@ -62,4 +62,46 @@ public class PicCapture : MonoBehaviour
         photoCaptureObject.Dispose();
         photoCaptureObject = null;
     }
+
+
+
+    /*
+    public void SaveToTex()
+    {
+        Application.CaptureScreenshot("Assets/Resources/UnityScreenshot.png");
+        print("space key was pressed");
+        var photoFrame : GameObject = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        photoFrame.renderer.material = new Material(Shader.Find(" Diffuse"));
+        photoFrame.renderer.material.SetColor("_Color", Color.red);
+        var photo : Texture2D = Resources.Load("UnityScreenshot.png", Texture2D);
+        if (photo)
+        {
+            Debug.Log("Texture Loaded Sucessfully...");
+            photoFrame.renderer.material.mainTexture = photo;
+        }
+        else
+        {
+            Debug.Log("Unable to Load texture...");
+        }
+    }
+    */
+
+        /*
+    IEnumerator save_png_player()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            File.WriteAllBytes(Application.persistentDataPath + "/" + name + ".jpg", bytes);
+        }
+        else
+        {
+            File.WriteAllBytes(Application.dataPath + "/Resources/save_screen/" + name + ".jpg", bytes);
+        }
+
+
+        yield return null;
+
+
+    }
+    */
 }

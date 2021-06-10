@@ -31,6 +31,16 @@ public class VidCapture : MonoBehaviour
         }
     }
 
+    public void StartVidCap()
+    {
+        StartVideoCaptureTest();
+    }
+
+    public void StopVidCap()
+    {
+
+    }
+
     public void StartVideoCaptureTest()
     {
 
