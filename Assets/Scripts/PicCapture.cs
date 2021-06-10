@@ -45,7 +45,8 @@ public class PicCapture : MonoBehaviour
         // Create a GameObject to which the texture can be applied
         GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
         Renderer quadRenderer = quad.GetComponent<Renderer>() as Renderer;
-        quadRenderer.material = new Material(Shader.Find("Custom/Unlit/UnlitTexture"));
+        //quadRenderer.material = new Material(Shader.Find("Custom/Unlit/UnlitTexture"));
+        quadRenderer.material = new Material(Shader.Find("Unlit/Texture"));
 
         quad.transform.parent = this.transform;
         quad.transform.localPosition = new Vector3(0.0f, 0.0f, 3.0f);
