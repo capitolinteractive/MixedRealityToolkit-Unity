@@ -9,6 +9,8 @@ public class PicCapture : MonoBehaviour
     PhotoCapture photoCaptureObject = null;
     Texture2D targetTexture = null;
 
+    public GameObject testtarget;
+
     // Use this for initialization
     void Start()
     {
@@ -53,8 +55,13 @@ public class PicCapture : MonoBehaviour
 
         quadRenderer.material.SetTexture("_MainTex", targetTexture);
 
+        
+
         // Deactivate the camera
         photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
+
+        testtarget.SetActive(true);
+        testtarget.GetComponent<Renderer>().material = quadRenderer.material;
     }
 
     void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
