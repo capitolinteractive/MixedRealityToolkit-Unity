@@ -408,10 +408,10 @@ PlayerSettings:
     m_Automatic: 0
   m_BuildTargetVRSettings:
   - m_BuildTarget: Android
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: Windows Store Apps
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices:
     - WindowsMR
   - m_BuildTarget: N3DS
@@ -434,7 +434,7 @@ PlayerSettings:
     m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: Standalone
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices:
     - OpenVR
   - m_BuildTarget: Tizen
@@ -456,7 +456,7 @@ PlayerSettings:
     m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: iPhone
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: tvOS
     m_Enabled: 0

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HandMenuExamples_Copy.unity
     guid: 65188eb2ea455da4ebc4ddf9bb546e2c
   m_configObjects:
-    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: e0a6da15c9d4bf2499d9c227d90bd8e7,
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 26dbe3f4aea63cc4cb86c6bb1898c480,
       type: 2}
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: e62a87a58e0855440bf3675f4e3eac18,
       type: 2}
