@@ -60,6 +60,12 @@ public class PicCapture : MonoBehaviour
         // Deactivate the camera
         photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
 
+        //TEST STUFF
+        if(GetComponent<PicHolder>() != null)
+        {
+            GetComponent<PicHolder>().AddPic(quadRenderer.material);
+        }
+        
         testtarget.SetActive(true);
         testtarget.GetComponent<Renderer>().material = quadRenderer.material;
     }
